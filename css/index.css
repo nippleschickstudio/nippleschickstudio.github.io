@@ -1,6 +1,156 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
 * {
   margin: 0;
-
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-image: url(../img/bg-main.png);
+  background-position: center;
+  background-size: cover;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.logo img {
+  max-width: 120px;
+  height: 100px;
+}
+
+.navmenu {
+  display: flex;
+}
+
+.navmenu a {
+  color: rgb(243, 34, 34);
+  font-size: 16px;
+  text-transform: capitalize;
+  padding: 10px 20px;
+  font-weight: 400;
+  transition: all 0.42s ease;
+}
+
+.navmenu a:hover {
+  color: yellow;
+}
+
+.navicon {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon i {
+  margin-right: 20px;
+  color: yellow;
+  font-size: 25px;
+  font-weight: 400;
+  transition: all 0.42s ease;
+}
+
+.nav-icon i:hover {
+  color: rgb(243, 34, 34);
+}
+
+#menu-icon {
+  font-size: 25px;
+  color: yellow;
+  z-index: 10001;
+  cursor: pointer;
+  transition: all 0.42s ease;
+}
+
+#menu-icon:hover {
+  color: rgb(243, 34, 34);
+}
+
+section {
+  padding: 5% 10%;
+}
+
+.main-home {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/flashsale.png);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+}
+
+.main-text h5 {
+  color: rgb(243, 34, 34);
+  font-size: 25px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.main-text h1 {
+  color: rgb(249, 178, 48);
+  font-size: 65px;
+  text-transform: capitalize;
+  line-height: 1.1;
+  font-weight: 600;
+  margin: 6px 10px;
+}
+
+.main-text p {
+  color: yellow;
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.main-btn {
+  display: inline-block;
+  color: rgb(243, 34, 34);
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  border: 2px solid #59dba0;
+  margin: 6px 10px;
+  transition: all 0.42s ease;
+  padding: 12px 25px;
+}
+
+.main-btn:hover {
+  color: yellow;
+}
+
+.main-btn i {
+  vertical-align: middle;
+}
+
+.down-arrow {
+  position: absolute;
+  top: 88%;
+  right: 9%;
+}
+
+.down i {
+  font-size: 30px;
+  color: rgb(243, 34, 34);
+  border: 2px solid yellow;
+  border-radius: 50px;
+  padding: 12px 12px;
+  background-color: yellow;
+}
+
+.down i:hover {
+  color: yellow;
+  background-color: rgb(243, 34, 34);
+  transition: all 0.42s ease;
 }
